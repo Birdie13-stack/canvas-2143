@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="style.css">
+     <title>Drawing board</title>
+</head>
+<body>
+     <h1>Paint your own Picture Here!</h1>
+    <div>
+     <p>Set width
+          <input type="text" onchange="setWidth(this.value)" class="input1">
+          Set height
+          <input type="text" onchange="setHeight(this.value)" class="input1">
+       </p>
+    </div>
+
+     <canvas id="canvas1" onmousedown="startPaint()" onmousemove="doPaint(event.offsetX, event.offsetY)" onmouseup="endPaint()">
+
+     </canvas>
+
+     <p>
+          Brush color
+          <input type="color" name="" id="color" value="#000" onchange="setColor(this.value)">
+          Brush Size
+          <input type="range" name="" value="50" min="1" max="50" id="sizeInput" oninput="resizeBrush(this.value)">
+          <output id="sizeOutput"> 50</output>
+
+     </p>
+
+     <p>
+          <input type="button" value="Clear Canvas" id="clear" onclick="clearCanvas()">
+     </p>
+
+     <script src="script.js"></script>
+</body>
+</html>
+
+
+<script>
+
+</script>

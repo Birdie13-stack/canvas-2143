@@ -1,0 +1,27 @@
+
+body{
+     font-family: Arial, Helvetica, sans-serif;
+}
+canvas{
+       border: 5px dotted gray;
+       width: 500px;
+       height: 400px;
+}
+
+#color{
+   margin: 0 10px;
+}
+
+@media screen and  (max-width:600px) {
+     canvas{
+          width: 300px;
+          height: 300px;
+     }
+
+     div{
+          width: 250px;
+     }
+     .input1{
+          margin-bottom: 20px;
+     }
+}
